@@ -5,11 +5,12 @@ of utilities for building command-line interfaces.
 
 import subprocess
 
+
 def choose(prompt: str = None, options: list = None, limit: int = 1) -> list:
     """Choose an option from a list of choices.
 
     Args:
-        question (str): The question to ask the user (optional). Defaults to None.
+        prompt (str): The question to ask the user (optional). Defaults to None.
         options (list): A list of choices to present to the user. Defaults to None.
         limit (int, optional): How many choices can be selected. Defaults to 1.
 
@@ -27,6 +28,7 @@ def choose(prompt: str = None, options: list = None, limit: int = 1) -> list:
     result = subprocess.run(command, stdout=subprocess.PIPE, text=True, check=True)
     if result.returncode != 0:
         print(result.stderr)
+
 
 def confirm(prompt: str = None) -> bool:
     """Confirm a user's choice.
@@ -46,6 +48,7 @@ def confirm(prompt: str = None) -> bool:
         return True
     return False
 
+
 def get_input(prompt: str = None, placeholder: str = None) -> str:
     """Prompt the user for input.
 
@@ -63,9 +66,10 @@ def get_input(prompt: str = None, placeholder: str = None) -> str:
     if placeholder:
         placeholder = f"--placeholder={placeholder}"
         command.append(placeholder)
-    
+
     result = subprocess.run(command, stdout=subprocess.PIPE, text=True, check=True)
     return result.stdout
+
 
 def spin(command: str = None, show_output: bool = False, spinner: str = None, text: str = None) -> None:
     """Display a spinner.
@@ -93,12 +97,10 @@ def spin(command: str = None, show_output: bool = False, spinner: str = None, te
     if show_output:
         show_output = "--show-output"
         cmd.append(show_output)
-    cmd = " ".join(cmd) 
+    cmd = " ".join(cmd)
     result = subprocess.run(cmd, stdout=subprocess.PIPE, text=True, check=False)
     print(result.stdout)
 
+
 def log():
     raise NotImplementedError("This function is not implemented yet")
-
-
-
