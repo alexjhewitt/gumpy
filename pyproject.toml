@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "gum-py"
+name = "gumsh-py"
 version = "1.0.0"
 authors = [
   { name="Alex Hewitt", email="alexhewit.j@gmail.com" },
@@ -22,4 +22,4 @@ Homepage = "https://github.com/alexjhewitt/gumpy"
 Issues = "https://github.com/alexjhewitt/gumpy/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["gumpy"]
+packages = ["gumsh-py"]
