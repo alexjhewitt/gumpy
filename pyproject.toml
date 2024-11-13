@@ -3,12 +3,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "gumsh-py"
+name = "gumsh_py"
 version = "1.0.5"
 authors = [
   { name="Alex Hewitt", email="alexhewit.j@gmail.com" },
 ]
-description = "gumsh-py is a Python interface of charm.sh's shell tool called gum"
+description = "gumsh_py is a Python interface of charm.sh's shell tool called gum"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -18,8 +18,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/alexjhewitt/gumsh-py"
-Issues = "https://github.com/alexjhewitt/gumsh-py/issues"
+Homepage = "https://github.com/alexjhewitt/gumsh_py"
+Issues = "https://github.com/alexjhewitt/gumsh_py/issues"
 
 [tool.hatch.build.targets.wheel]
-packages = ["gumsh-py"]
+packages = ["src/gumsh_py"]
