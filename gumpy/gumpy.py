@@ -102,5 +102,20 @@ def spin(command: str = None, show_output: bool = False, spinner: str = None, te
     print(result.stdout)
 
 
-def log():
-    raise NotImplementedError("This function is not implemented yet")
+def log(text: str = None, level: str = None, time: str = None) -> None:
+    """Log a message.
+
+    Args:
+        text (str, optional): Text to log. Defaults to None.
+        level (str, optional): Log level to use. Defaults to None.
+        time (str, optional): Time format to use. Defaults to None.
+    """
+
+    command = ["gum", "log"]
+    if text:
+        command.append(text)
+    if level:
+        command.append(f"--level={level}")
+    if time:
+        command.append(f"--time={time}")
+    subprocess.run(command, stdout=subprocess.PIPE, text=True, check=False)
