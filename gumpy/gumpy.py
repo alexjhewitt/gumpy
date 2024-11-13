@@ -38,8 +38,24 @@ def confirm(prompt: str = "Are you sure?") -> bool:
         return True
     return False
 
-def input():
-    raise NotImplementedError("This function is not implemented yet")
+def get_input(prompt: str = None, placeholder: str = None) -> str:
+    """Prompt the user for input.
+
+    Args:
+    prompt (str, optional): Prompt you would like to display to user. Defaults to None.
+        placeholder (str, optional): Placeholder text for the input. Defaults to None.
+
+    Returns:
+        str: User's input.
+    """
+    if prompt:
+        print(prompt)
+    if placeholder:
+        placeholder = f"--placeholder={placeholder}"
+    
+    result = subprocess.run(["gum", "input", placeholder], stdout=subprocess.PIPE, text=True, check=True)
+    print(result.stdout)
+    return ""
 
 def spin():
     raise NotImplementedError("This function is not implemented yet")
