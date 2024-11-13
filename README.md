@@ -5,9 +5,7 @@ gumsh-py is a Python interface of charm.sh's shell tool called [gum](https://git
 Install gum for your environment using the [instructions](https://github.com/charmbracelet/gum).
 Then install my python package like so:
 ```sh
-$ git clone https://github.com/alexjhewitt/gumsh-py.git
-$ cd gumsh-py
-$ python3 setup.py install
+$ pip install gumsh-py
 ```
 
 # Usage
