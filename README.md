@@ -18,5 +18,5 @@ import gumpy
 ```
 
 # Note
-Not all command flag options in the gum library are given for each command. 
+Not all command flag options in the gum library are given for each command. And not all commands are included. If this package picks up steam, I will consider adding support.
 E.g. `gum choose` for example allows for a limit which I have included functionality for, but there are other [options](https://github.com/charmbracelet/gum/blob/main/choose/options.go) such as `CursorPrefix` that are not included for simplicity's sake. 
