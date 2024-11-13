@@ -1,5 +1,5 @@
 # gumpy
-gumpy is a Python implementation of charm.sh's CLI tool called [gum](https://github.com/charmbracelet/gum). Gum is used to create aesthetically pleasing shell scripts. 
+gumpy is a Python interface of charm.sh's shell tool called [gum](https://github.com/charmbracelet/gum). Gum is used to create aesthetically pleasing shell scripts. 
 
 # Installation
 Install gum for your environment using the [instructions](https://github.com/charmbracelet/gum).
