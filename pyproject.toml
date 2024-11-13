@@ -8,7 +8,7 @@ version = "1.0.0"
 authors = [
   { name="Alex Hewitt", email="alexhewit.j@gmail.com" },
 ]
-description = "gumpy is a Python interface of charm.sh's shell tool called gum"
+description = "gumsh-py is a Python interface of charm.sh's shell tool called gum"
 readme = "README.md"
 requires-python = ">=3.8"
 classifiers = [
@@ -18,8 +18,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/alexjhewitt/gumpy"
-Issues = "https://github.com/alexjhewitt/gumpy/issues"
+Homepage = "https://github.com/alexjhewitt/gumsh-py"
+Issues = "https://github.com/alexjhewitt/gumsh-py/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["gumsh-py"]

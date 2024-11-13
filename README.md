@@ -1,18 +1,18 @@
-# gumpy
-gumpy is a Python interface of charm.sh's shell tool called [gum](https://github.com/charmbracelet/gum). Gum is used to create aesthetically pleasing shell scripts. 
+# gumsh-py
+gumsh-py is a Python interface of charm.sh's shell tool called [gum](https://github.com/charmbracelet/gum). Gum is used to create aesthetically pleasing shell scripts. 
 
 # Installation
 Install gum for your environment using the [instructions](https://github.com/charmbracelet/gum).
 Then install my python package like so:
 ```sh
-$ git clone https://github.com/alexjhewitt/gumpy.git
-$ cd gumpy
+$ git clone https://github.com/alexjhewitt/gumsh-py.git
+$ cd gumsh-py
 $ python3 setup.py install
 ```
 
 # Usage
 ```python
-import gumpy
+import gumsh-py
 
 
 ```
