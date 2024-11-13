@@ -16,8 +16,10 @@ def choose(prompt: str = None, options: list = None, limit: int = 1) -> list:
     Returns:
         list: A list of the user's choices.
     """
+
     command = f"gum choose --limit={limit} " + " ".join(options)
-    if prompt : print(prompt)
+    if prompt:
+        print(prompt)
     result = subprocess.run(command.split(" "), stdout=subprocess.PIPE, text=True, check=True)
     if result.returncode != 0:
         print(result.stderr)
