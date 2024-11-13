@@ -24,34 +24,24 @@ def choose(prompt: str = None, options: list = None, limit: int = 1) -> list:
     if result.returncode != 0:
         print(result.stderr)
 
-def confirm():
-    raise NotImplementedError("This function is not implemented yet")
+def confirm(prompt: str = "Are you sure?") -> bool:
+    """Confirm a user's choice.
 
-def file():
-    raise NotImplementedError("This function is not implemented yet")
+    Args:
+        prompt (str, optional): Prompt you would like to display to user. Defaults to "Are you sure?".
 
-def format():
-    raise NotImplementedError("This function is not implemented yet")
+    Returns:
+        bool: True if user confirms, False otherwise.
+    """
+    result = subprocess.run(["gum", "confirm", prompt], stdout=subprocess.PIPE, text=True, check=False)
+    if result.returncode == 0:
+        return True
+    return False
 
 def input():
     raise NotImplementedError("This function is not implemented yet")
 
-def join():
-    raise NotImplementedError("This function is not implemented yet")
-
-def pager():
-    raise NotImplementedError("This function is not implemented yet")
-
 def spin():
-    raise NotImplementedError("This function is not implemented yet")
-
-def style():
-    raise NotImplementedError("This function is not implemented yet")
-
-def table():
-    raise NotImplementedError("This function is not implemented yet")
-
-def write():
     raise NotImplementedError("This function is not implemented yet")
 
 def log():
