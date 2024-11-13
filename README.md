@@ -5,14 +5,18 @@ gumsh_py is a Python interface of charm.sh's shell tool called [gum](https://git
 Install gum for your environment using the [instructions](https://github.com/charmbracelet/gum).
 Then install my python package like so:
 ```sh
-$ pip install gumsh_py
+$ pip install gumsh-py
 ```
 
 # Usage
 ```python
-import gumsh_py
+from gumsh_py import gumsh_py as gp
 
-
+gumpy.choose(prompt="favorite languages?", options=["python", "javascript", "java", "c++", "c#"])
+gumpy.spin(command="sleep 5", show_output=False, spinner="dot", text="Sleeping...")
+print(gumpy.confirm(prompt="Are you positive?"))
+gumpy.get_input(prompt="Enter your name:", placeholder="John Doe")
+gumpy.log(text="Hello, World!", level="info", time="ansic")
 ```
 
 # Note

@@ -1,5 +1,5 @@
 """
-gumsh-py is a Python library that provides a set 
+gumsh_py is a Python library that provides a set 
 of utilities for building command-line interfaces.
 """
 
