@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gumsh-py"
-version = "1.0.0"
+version = "1.0.1"
 authors = [
   { name="Alex Hewitt", email="alexhewit.j@gmail.com" },
 ]
