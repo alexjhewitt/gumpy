@@ -4,9 +4,9 @@ build-backend = "hatchling.build"
 
 [project]
 name = "gumsh_py"
-version = "1.1.0"
+version = "1.1.1"
 authors = [
-  { name="Alex Hewitt", email="alexhewit.j@gmail.com" },
+  { name="Alex Hewitt", email="alexhewitt.j@gmail.com" },
 ]
 description = "gumsh_py is a Python interface of charm.sh's shell tool called gum"
 readme = "README.md"
