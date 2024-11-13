@@ -22,3 +22,6 @@ Not all command flag options in the gum library are given for each command. And 
 E.g. `gum choose` for example allows for a limit which I have included functionality for, but there are other [options](https://github.com/charmbracelet/gum/blob/main/choose/options.go) such as `CursorPrefix` that are not included for simplicity's sake. 
 
 To view flags that the Python package uses, go to the [gum](https://github.com/charmbracelet/gum) repository, choose the command you are using `choose` for example, and open the `options.go` file to view flag options. 
+
+#Pypi
+[Pypi](https://pypi.org/project/gumsh-py/) details.
